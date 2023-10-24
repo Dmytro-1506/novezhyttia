@@ -1,0 +1,23 @@
+.hero {
+    height: 800px;
+    // background-color: #8aa586;
+    background-image: url(../images/hands.jpg);
+    background-position: no-repeat;
+    background-size: cover;
+}
+
+.hero-title {
+    color: beige;
+    font-size: 40px;
+}
+
+.hero-text-box {
+    width: 400px;
+    align-self: flex-start;
+}
+
+.hero-text {
+    color: beige;
+    font-size: 20px;
+    font-style: italic;
+}

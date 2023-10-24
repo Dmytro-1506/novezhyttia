@@ -3,7 +3,7 @@
     flex-direction: row;
     width: 1400px;
     height: 80px;
-    background-color: #d1be86;
+    background-color: #7eaa80;
     align-items: center;
     padding: 20px 60px;
 }
@@ -16,5 +16,9 @@
 .nav {
     display: flex;
     gap: 30px;
+}
+
+.nav-link {
     font-size: 24px;
+    color: antiquewhite;
 }

@@ -9,6 +9,13 @@
     <title>Gallery</title>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.11.0/simple-lightbox.min.css"
+      integrity="sha512-2fuz5SZm+ilUXvkAiuhKoQcWBkZqRAEKhBnlIioPGOBju8E1+C6MwtpvNt/pidBXgDTU/liw70r4/4X1YJ46BQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
@@ -40,15 +47,27 @@
     <!-- MAIN SECTION -->
 
     <main class="main">
-      <section class="gallery">
+      <section class="gallery-section">
         <h1 class="gallery-title">Gallery</h1>
+        <p><a href="index.html">Go back</a></p>
+
+        <!-- Add gallery items to this list -->
+        <ul class="gallery"></ul>
+
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.11.0/simple-lightbox.min.js"
+          integrity="sha512-6MY1+N+yqKr8NaWCd7SsFAavdwAnxKihOP2BI0MnU+k8khGU+op83TxJE7dYj0o2mmtfDbRs7U1jAmAeEOjUnw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
+        <script src="js/02-lightbox.js" type="module"></script>
       </section>
     </main>
 
     <!-- FOOTER SECTION -->
 
     <footer class="footer">
-      <h1 class="footer-title">NewLifeChurch</h1>
+      <h1 class="footer-title">Церква Нове Життя</h1>
     </footer>
   </body>
 </html>

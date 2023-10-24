@@ -1,15 +1,22 @@
 .footer {
-    height: 100px;
+    height: 120px;
     width: 1400px;
-    background-color: #807474f4;
-    padding: 20px 60px;
+    background-color: #525151f4;
+    padding: 20px 100px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .footer-title {
-    font-size: 36px;
+    font-size: 40px;
     color: bisque;
     align-self: flex-start;
+}
+
+.address__link,
+.footer__link {
+    font-size: 20px;
+    color: antiquewhite;
 }
