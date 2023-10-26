@@ -9,7 +9,7 @@
     justify-content: center;
     @include tablet {
         flex-direction: row;
-        max-width: 800px;
+        height: 100px;
     }
 
     @include desktop {
@@ -20,12 +20,12 @@
     }
     .footer-title {
         display: none;
-        @include desktop {
-            display: block;
-            font-size: 20px;
-            color: antiquewhite;
-            align-self: center;
-        }
+        // @include tablet {
+        //     display: inline-block;
+        //     font-size: 20px;
+        //     color: antiquewhite;
+        //     align-self: center;
+        // }
     }
 
     .address__list {
@@ -33,11 +33,18 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @include tablet {
+            flex-direction: row;
+            gap: 35px;
+        }
     }
 
     .address__link,
     .footer__link {
         font-size: 16px;
         color: antiquewhite;
+        @include tablet {
+            font-size: 20px;
+        }
     }
 }

@@ -27,11 +27,6 @@ section {
   align-items: center;
   padding: 20px 40px;
 }
-@media screen and (min-width: 768px) {
-  section {
-    max-width: 800px;
-  }
-}
 @media screen and (min-width: 1200px) {
   section {
     max-width: 1400px;
@@ -88,7 +83,10 @@ button {
 @media screen and (min-width: 768px) {
   .header {
     flex-direction: row;
-    max-width: 800px;
+    height: 100px;
+    padding: 20px 40px;
+    align-items: baseline;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -101,13 +99,28 @@ button {
   margin-right: 20px;
   font-size: 24px;
 }
+@media screen and (min-width: 768px) {
+  .header .header-title {
+    font-size: 32px;
+  }
+}
 .header .nav {
   display: flex;
   gap: 20px;
 }
+@media screen and (min-width: 768px) {
+  .header .nav {
+    gap: 20px;
+  }
+}
 .header .nav-link {
   font-size: 16px;
   color: antiquewhite;
+}
+@media screen and (min-width: 768px) {
+  .header .nav-link {
+    font-size: 16px;
+  }
 }
 
 .hero {
@@ -119,23 +132,27 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 800px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    max-width: 1400px;
-    height: 600px;
+    height: calc(100vh - 200px);
   }
 }
 .hero .hero-text-box {
   width: 240px;
   align-self: flex-start;
 }
+@media screen and (min-width: 768px) {
+  .hero .hero-text-box {
+    width: 360px;
+  }
+}
 .hero .hero-text {
   color: beige;
   font-size: 12px;
   font-style: italic;
+}
+@media screen and (min-width: 768px) {
+  .hero .hero-text {
+    font-size: 20px;
+  }
 }
 
 .events {
@@ -247,7 +264,7 @@ button {
 @media screen and (min-width: 768px) {
   .footer {
     flex-direction: row;
-    max-width: 800px;
+    height: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -261,22 +278,26 @@ button {
 .footer .footer-title {
   display: none;
 }
-@media screen and (min-width: 1200px) {
-  .footer .footer-title {
-    display: block;
-    font-size: 20px;
-    color: antiquewhite;
-    align-self: center;
-  }
-}
 .footer .address__list {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .footer .address__list {
+    flex-direction: row;
+    gap: 35px;
+  }
+}
 .footer .address__link,
 .footer .footer__link {
   font-size: 16px;
   color: antiquewhite;
+}
+@media screen and (min-width: 768px) {
+  .footer .address__link,
+  .footer .footer__link {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

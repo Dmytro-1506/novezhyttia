@@ -5,22 +5,28 @@
     background-position: center;
     background-size: cover;
     @include tablet {
-        max-width: 800px;
+        height: calc(100vh - 200px);
     }
 
     @include desktop {
-        max-width: 1400px;
-        height: 600px;
+        // max-width: 1400px;
+        // height: 600px;
     }
 
     .hero-text-box {
         width: 240px;
         align-self: flex-start;
+        @include tablet {
+            width: 360px;
+        }
     }
 
     .hero-text {
         color: beige;
         font-size: 12px;
         font-style: italic;
+        @include tablet {
+            font-size: 20px;
+        }
     }
 }

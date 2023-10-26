@@ -28,7 +28,7 @@ section {
     align-items: center;
     padding: 20px 40px;
     @include tablet {
-        max-width: 800px;
+        // max-width: 800px;
     }
 
     @include desktop {
