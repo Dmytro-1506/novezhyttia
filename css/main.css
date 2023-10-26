@@ -95,13 +95,7 @@ button {
     flex-direction: row;
     height: 100px;
     padding: 20px 40px;
-    align-items: baseline;
     justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header {
-    align-items: center;
   }
 }
 .header .header-title {
@@ -160,13 +154,14 @@ button {
 .hero {
   width: 100%;
   height: calc(100vh - 180px);
-  background-image: url(../images/hands.jpg);
+  background-image: url(../images/hands-mobile.jpg);
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: calc(100vh - 200px);
+    height: 800px;
+    background-image: url(../images/hands-tablet.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -174,6 +169,7 @@ button {
     background-image: url(../images/hands-desk.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    height: 640px;
     padding: 40px 120px;
   }
 }

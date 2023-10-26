@@ -1,19 +1,19 @@
 .hero {
     width: 100%;
     height: calc(100vh - 180px);
-    background-image: url(../images/hands.jpg);
+    background-image: url(../images/hands-mobile.jpg);
     background-position: center;
     background-size: cover;
     @include tablet {
-        height: calc(100vh - 200px);
+        height: 800px;
+        background-image: url(../images/hands-tablet.jpg);
     }
 
     @include desktop {
         background-image: url(../images/hands-desk.jpg);
-        // background-size: contain;
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        // height: 640px;
+        height: 640px;
         padding: 40px 120px;
     }
 
