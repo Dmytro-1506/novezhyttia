@@ -1,22 +1,30 @@
 .hero {
-    height: 800px;
+    width: 100%;
+    height: 400px;
     background-image: url(../images/hands.jpg);
-    background-position: no-repeat;
+    background-position: center;
     background-size: cover;
-}
+    @include tablet {
+        max-width: 800px;
+    }
 
-.hero-title {
-    color: beige;
-    font-size: 40px;
-}
+    @include desktop {
+        max-width: 1400px;
+        height: 600px;
+    }
+    // .hero-title {
+    //     color: beige;
+    //     font-size: 40px;
+    // }
 
-.hero-text-box {
-    width: 400px;
-    align-self: flex-start;
-}
+    .hero-text-box {
+        width: 240px;
+        align-self: flex-start;
+    }
 
-.hero-text {
-    color: beige;
-    font-size: 20px;
-    font-style: italic;
+    .hero-text {
+        color: beige;
+        font-size: 12px;
+        font-style: italic;
+    }
 }

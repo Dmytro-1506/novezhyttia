@@ -17,12 +17,24 @@ body {
     align-items: center;
 }
 
+main {
+    width: 100%;
+}
+
 section {
-    width: 1400px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 80px;
+    padding: 20px 40px;
+    @include tablet {
+        max-width: 800px;
+    }
+
+    @include desktop {
+        max-width: 1400px;
+        padding: 40px 80px;
+    }
 }
 
 h1,

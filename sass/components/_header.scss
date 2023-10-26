@@ -1,25 +1,35 @@
 .header {
     display: flex;
-    flex-direction: row;
-    width: 1400px;
+    flex-direction: column;
+    width: 100%;
+    // max-width: 400px;
     height: 80px;
     background-color: #7eaa80;
     border-bottom: 2px solid antiquewhite;
     align-items: center;
-    padding: 20px 60px;
-}
+    justify-content: center;
+    @include tablet {
+        flex-direction: row;
+        max-width: 800px;
+    }
+    
+    @include desktop {
+        flex-direction: row;
+        max-width: 1400px;
+    }
 
-.header-title {
-    margin-right: 60px;
-    font-size: 34px;
-}
+    .header-title {
+        margin-right: 20px;
+        font-size: 20px;
+    }
 
-.nav {
-    display: flex;
-    gap: 30px;
-}
+    .nav {
+        display: flex;
+        gap: 30px;
+    }
 
-.nav-link {
-    font-size: 24px;
-    color: antiquewhite;
+    .nav-link {
+        font-size: 16px;
+        color: antiquewhite;
+    }
 }
