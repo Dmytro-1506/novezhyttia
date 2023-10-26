@@ -70,6 +70,17 @@ button {
   border-radius: 4px;
 }
 
+.current-page::after {
+  display: block;
+  content: " ";
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: rgba(82, 81, 81, 0.9568627451);
+  position: absolute;
+  bottom: -4px;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -114,8 +125,12 @@ button {
   }
 }
 .header .nav-link {
+  position: relative;
   font-size: 16px;
   color: antiquewhite;
+}
+.header .nav-link.current-page {
+  color: rgba(82, 81, 81, 0.9568627451);
 }
 @media screen and (min-width: 768px) {
   .header .nav-link {
@@ -290,8 +305,15 @@ button {
     gap: 35px;
   }
 }
+.footer .contacts__icon {
+  display: inline-block;
+  margin-right: 8px;
+  fill: antiquewhite;
+}
 .footer .address__link,
 .footer .footer__link {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   color: antiquewhite;
 }

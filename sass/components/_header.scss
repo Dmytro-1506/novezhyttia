@@ -36,8 +36,12 @@
     }
 
     .nav-link {
+        position: relative;
         font-size: 16px;
         color: antiquewhite;
+        &.current-page {
+            color: #525151f4;
+            }
         @include tablet {
             font-size: 16px;
         }
